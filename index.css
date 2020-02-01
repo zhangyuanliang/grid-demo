@@ -1,0 +1,51 @@
+@import './reset.css';
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 50px);
+  grid-template-areas: 'main main right-1'
+  'main main right-2'
+  'main main right-2'
+  'footer-1 footer-2 right-2';
+  gap: 10px 10px;
+}
+
+.main {
+  grid-area: main;
+  background: #B03531;
+}
+
+.right-1 {
+  grid-area: right-1;
+  background: #33A8A5;
+}
+
+.right-2 {
+  grid-area: right-2;
+  background: #6A478F;
+}
+
+.footer-1 {
+  grid-area: footer-1;
+  background: #30997B;
+}
+
+.footer-2 {
+  grid-area: footer-2;
+  background: #DA6F2B;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.flex-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
